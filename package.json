@@ -1,0 +1,30 @@
+{
+  "name": "twitter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "fund-metamask": "truffle exec ./fund-metamask.js",
+    "dev": "truffle migrate --reset && npm run artifacts && next client",
+    "artifacts": "cp -r ./build/contracts/* ./client/web3/artifacts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gravatar-url": "^2.0.0",
+    "next": "^6.0.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-moment": "^0.7.0",
+    "truffle-contract": "^3.0.5",
+    "web3": "^1.0.0-beta.34"
+  },
+  "devDependencies": {
+    "babel-plugin-inline-react-svg": "^0.5.2",
+    "babel-preset-env": "^1.7.0"
+  }
+}
